@@ -62,7 +62,7 @@ const LoginPage = () => {
         </label>
 
         <label>Password:
-            <input type="text" name='password' value={password} onChange={(e)=>{setPassword(e.currentTarget.value)}} required />
+            <input type="password" name='password' value={password} onChange={(e)=>{setPassword(e.currentTarget.value)}} required />
         </label>
         
         <div className="bottomPart">

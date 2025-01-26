@@ -64,11 +64,11 @@ const SignupPage = () => {
         </label>
         
         <label>User Email:
-            <input type="text" name='useremail' value={useremail} onChange={(e)=>{setUseremail(e.currentTarget.value)}} required />
+            <input type="email" name='useremail' value={useremail} onChange={(e)=>{setUseremail(e.currentTarget.value)}} required />
         </label>
 
         <label>Password:
-            <input type="text" name='password' value={password} onChange={(e)=>{setPassword(e.currentTarget.value)}} required />
+            <input type="password" name='password' value={password} onChange={(e)=>{setPassword(e.currentTarget.value)}} required />
         </label>
 
         <label>Profile Picture:
