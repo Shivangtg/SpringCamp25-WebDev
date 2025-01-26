@@ -28,7 +28,7 @@ const  UpdatingTaskPage= () => {
   const handleSubmit=async function(e){
     e.preventDefault();
     setError("");
-    const origin=process.env.REACT_APP_API_URL;
+    const origin=import.meta.env.VITE_API_URL;
     try {
     const response=await fetch(`${origin}/api/task/update/${task_id}`,{
         method:"PATCH",

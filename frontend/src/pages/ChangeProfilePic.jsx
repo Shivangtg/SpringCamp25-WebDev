@@ -19,7 +19,7 @@ const ChangeProfilePic = () => {
     const changeProfilePic = async function(e){
         e.preventDefault();
         setError("");
-        const origin=process.env.REACT_APP_API_URL;
+        const origin=import.meta.env.VITE_API_URL;
         const response=await fetch(`${origin}/api/user/update/`,{
             method:"PATCH",
             headers:{

@@ -21,7 +21,7 @@ const LoginPage = () => {
     
     e.preventDefault();
     setError('');
-    const origin=process.env.REACT_APP_API_URL
+    const origin=import.meta.env.VITE_API_URL;
     const responseToken=await fetch(`${origin}/api/user/login`,{
         method:"POST",
         headers:{

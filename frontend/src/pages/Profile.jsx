@@ -16,7 +16,7 @@ const Profile = ({user}) => {
 
   const {dispatchUser}=useUserContext()
   const deleteUser=async function(){
-    const origin=process.env.REACT_APP_API_URL;
+    const origin=import.meta.env.VITE_API_URL;
     const response=await fetch(`${origin}/api/user/delete/`,{
       method:"DELETE",
       headers:{

@@ -31,7 +31,7 @@ function App() {
   const {user,dispatchUser}=useUserContext()
   const navigate=useNavigate();
   useEffect(()=>{
-    const origin=process.env.REACT_APP_API_URL;
+    const origin=import.meta.env.VITE_API_URL;
     const getUser=async function(){
       const response=await fetch(`${origin}/api/user/getUser`,{
         method:"POST",
