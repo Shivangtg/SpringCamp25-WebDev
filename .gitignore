@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+.env
+
+# Build files
+frontend/build/
+frontend/dist/
+backend/build/
+
+# OS-specific files
+.DS_Store

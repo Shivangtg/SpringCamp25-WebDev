@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+}
+#logo:hover{
+    filter: drop-shadow(0px 0px 10px rgba(159,24,254,1));
+}
+
+
+.darkGlow {
+  box-shadow: 0 0 1rem white; /* Optional: Adds shadow */
+}
+.lightGlow {
+  box-shadow: 0 0 1rem #ffd3d3; /* Optional: Adds shadow */
+}
+
+/* Styling Navbar */
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+.Navbar img{
+    transition: 0.2s;
+}
+.Navbar div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+.Navbar div img{
+    transition: 0.2s;
+    background:transparent
+}
+.auth-container{
+    display: flex;
+    align-items: center;
+}
+
+.big-dabba{
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling side menu  */
+.sideMenu{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    font-size: 1.5rem;
+    row-gap:1rem;
+    flex-grow: 1;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+
+/* Styling Options  */
+.options{
+    text-align: center;
+}
+
+/* Styling the forms  */
+.formContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    width: auto;
+    max-width: 40%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.Forms input{
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 100%;
+}
+
+/* Styling Profile Picture */
+.profilePictureContainer {
+  width: 300px; /* Set the container width */
+  height: 300px; /* Set the container height */
+  border-radius: 50%;
+  overflow: hidden; /* Clip the image that overflows */
+}
+
+.profilePictureContainer img {
+  width: 100%; /* Let the image adapt to the container's width */
+  height: 100%; /* Let the image adapt to the container's height */
+  border-radius: 50%;
+  object-fit: cover; /* Scale and crop the image to fill the container */
+  object-position: center; /* Center the image within the container */
+}
+
+
+/* Login form bottom part  */
+.bottomPart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling errorBox */
+.errorBox{
+    background-color: #ffefef;
+    color:#e7195a;
+    border:  1px solid #e7195a;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.cancleButton{
+    background-color: #e7195a;
+    color: white;
+}
+
+/* styling task */
+
+.Task{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px ;
+    padding: 2rem;
+    transition: 0.2s;
+}
+.Task:hover{
+    scale: 1.05;
+}
+
+/* Styling the date showing thing */
+.taskPageDate{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+/* styling the delete and update button  */
+
+.interactiveImage{
+    transform: translate(-25%,-25%);
+    width:"34px";
+}
+.bottomPartTask{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    margin-top: 1rem;
+    column-gap: 1rem;
+}
+
+/* #87ceeb */
+.addingTask{
+    background-color: lime;
+    padding: 15px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    transition: 0.2s;
+}
+.addingTask:hover{
+    box-shadow: 0 0 10px lime;
+}
+
+@media screen and (max-width:720px) {
+  .tasksContainer{
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+  }
+}
+@media screen and (min-width:720px) {
+    .tasksContainer{
+      margin-top: 1.5rem;
+      padding-left: 1.5rem;
+      display: grid;
+      /* align-items: center; */
+      justify-content: center;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: auto;
+    }
+  }
+@media screen and (min-width:1020px) {
+  .tasksContainer{
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width:1320px) {
+  .tasksContainer{
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width:1720px) {
+  .tasksContainer{
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: auto;
+  }
+}
+
+
+/* Styling Calender */
+
+.react-calendar {
+  max-width: 400px; /* Adjust container width */
+  margin: 20px auto; /* Center the calendar */
+  background: #f0f8ff; /* Light blue background */
+  border: 2px solid #1e90ff; /* Blue border */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navigation Styling (Year, Month Navigation) */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.react-calendar__navigation button {
+  background: #1e90ff; /* Blue background for buttons */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.react-calendar__navigation button:hover {
+  background: #4682b4; /* Darker blue on hover */
+}
+
+/* Days of the Week Styling */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 10px 0;
+}
+
+/* Dates (Tiles) Styling */
+.react-calendar__tile {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 5px; /* Add gap between tiles */
+}
+
+.react-calendar__tile:hover {
+  background: #87ceeb; /* Light blue on hover */
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: #1e90ff; /* Blue for active date */
+  color: white;
+}
+
+.react-calendar__tile--active:hover {
+  background: #4682b4; /* Darker blue on hover */
+}
+
+/* Today Highlight */
+.react-calendar__tile--now {
+  background: #ff7f50; /* Coral for today */
+  color: white;
+  font-weight: bold;
+}
+
+.react-calendar__tile--now:hover {
+  background: #ff6347; /* Darker coral on hover */
+}
+
+/* Disabled Dates */
+.react-calendar__tile:disabled {
+  background: #f0f0f0; /* Light gray for disabled */
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Week Numbers (Optional) */
+.react-calendar__tile--weekNumber {
+  background: #e0e0e0;
+  color: #666;
+}
+  
