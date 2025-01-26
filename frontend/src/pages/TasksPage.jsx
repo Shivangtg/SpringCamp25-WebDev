@@ -32,7 +32,7 @@ const TasksPage = () => {
         const json=await response.json();
         if(!response.ok){
           setError(json.error);
-          console.log("error encountered")
+          console.log("error encountered",json.error)
           return ;
         }
         let intermediateCategoryList={};

@@ -31,9 +31,10 @@ const ChangeProfilePic = () => {
         const json=await response.json();
         if(!response.ok){
             setError(json.error);
+            console.log(json.error);
             return ;
         }
-        console.log("dash",json,json.updatedUser);
+        // console.log("dash",json,json.updatedUser);
         await dispatchUser({type:"LOGIN",payload:json.updatedUser});
         navigate("/profile");
     }

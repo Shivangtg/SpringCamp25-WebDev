@@ -33,6 +33,7 @@ const LoginPage = () => {
     const jsonToken=await responseToken.json();
     if(!responseToken.ok){
         setError(jsonToken.error);
+        console.log(json.error);
         return ;
     }
     localStorage.setItem("user",jsonToken.token);
