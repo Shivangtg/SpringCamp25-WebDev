@@ -22,6 +22,7 @@ const LoginPage = () => {
     e.preventDefault();
     setError('');
     const origin=import.meta.env.VITE_API_URL;
+    console.log(origin)
     const responseToken=await fetch(`${origin}/api/user/login`,{
         method:"POST",
         headers:{
