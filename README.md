@@ -34,7 +34,7 @@ some images of the website are as follows
 ![Image](https://github.com/user-attachments/assets/c16f54fc-2912-4f7e-9fa9-54d4e7ae9d1c)
 ![Image](https://github.com/user-attachments/assets/fd908151-3367-4ea9-bffe-2c8f785b5769)
 ![Image](https://github.com/user-attachments/assets/8254b050-1164-4d2c-aaa4-474063755552)
-![Image](https://github.com/user-attachments/assets/af6b2cf6-1dca-4bd8-b704-8e547891fd8b)
+![Image](https://github.com/user-attachments/assets/824f0fd8-363c-44cf-844c-d1bde67e6089)
 ![Image](https://github.com/user-attachments/assets/cd2d72e8-54a3-41fd-8e86-bdc4c05794c9)
 ![Image](https://github.com/user-attachments/assets/3589f57f-69f6-4636-a51a-7ff48a5f8132)
 ![Image](https://github.com/user-attachments/assets/bb244233-a86e-4831-bd7e-dd6385ee13e1)
