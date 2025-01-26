@@ -28,8 +28,9 @@ const  UpdatingTaskPage= () => {
   const handleSubmit=async function(e){
     e.preventDefault();
     setError("");
+    const origin=process.env.REACT_APP_API_URL;
     try {
-    const response=await fetch(`http://localhost:6789/api/task/update/${task_id}`,{
+    const response=await fetch(`${origin}/api/task/update/${task_id}`,{
         method:"PATCH",
         headers:{
             'Content-Type':'application/json',

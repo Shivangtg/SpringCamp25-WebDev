@@ -21,9 +21,8 @@ const LoginPage = () => {
     
     e.preventDefault();
     setError('');
-    
-    
-    const responseToken=await fetch("http://localhost:6789/api/user/login",{
+    const origin=process.env.REACT_APP_API_URL
+    const responseToken=await fetch(`${origin}/api/user/login`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -37,7 +36,7 @@ const LoginPage = () => {
     }
     localStorage.setItem("user",jsonToken.token);
     
-    const responseUser=await fetch("http://localhost:6789/api/user/getUser",{
+    const responseUser=await fetch(`${origin}/api/user/getUser`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",

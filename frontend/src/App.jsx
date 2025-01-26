@@ -31,8 +31,9 @@ function App() {
   const {user,dispatchUser}=useUserContext()
   const navigate=useNavigate();
   useEffect(()=>{
+    const origin=process.env.REACT_APP_API_URL;
     const getUser=async function(){
-      const response=await fetch("http://localhost:6789/api/user/getUser",{
+      const response=await fetch(`${origin}/api/user/getUser`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json",

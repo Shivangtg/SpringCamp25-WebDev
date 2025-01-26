@@ -8,7 +8,8 @@ const cardRouter = require("./routes/cardRoutes")
 const app=express();
 
 const allowedOrigins = [
-    "http://localhost:5173",
+    process.env.ORIGIN1,
+    process.env.ORIGIN2
 ];
 
 app.use((req, res, next) => {

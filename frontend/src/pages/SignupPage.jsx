@@ -24,8 +24,8 @@ const SignupPage = () => {
     e.preventDefault();
     setError('');
     
-    
-    const responseToken=await fetch("http://localhost:6789/api/user/signup",{
+    const origin=process.env.REACT_APP_API_URL;
+    const responseToken=await fetch(`${origin}/api/user/signup`,{
         method:"POST",
         body:JSON.stringify({username,useremail,password,userimage}),
         headers:{

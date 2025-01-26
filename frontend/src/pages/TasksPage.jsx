@@ -21,7 +21,8 @@ const TasksPage = () => {
   useEffect(()=>{
       const fetchTasks=async()=>{
         setError('')
-        const response=await fetch("http://localhost:6789/api/task/getTaskByDate/"+dateToAdd,{
+        const origin=process.env.REACT_APP_API_URL;
+        const response=await fetch(`${origin}/api/task/getTaskByDate/`+dateToAdd,{
           method:"POST",
           headers:{
             "Content-Type":"application/json",

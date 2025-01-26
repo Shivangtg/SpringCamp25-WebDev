@@ -30,8 +30,9 @@ const  AddingTasksPage= () => {
   const handleSubmit=async function(e){
     e.preventDefault();
     setError("");
+    const origin=process.env.REACT_APP_API_URL;
     try {
-    const response=await fetch("http://localhost:6789/api/task/addTask",{
+    const response=await fetch(`${origin}/api/task/addTask`,{
         method:"POST",
         headers:{
             'Content-Type':'application/json',

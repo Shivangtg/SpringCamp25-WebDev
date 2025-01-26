@@ -16,7 +16,8 @@ const Profile = ({user}) => {
 
   const {dispatchUser}=useUserContext()
   const deleteUser=async function(){
-    const response=await fetch("http://localhost:6789/api/user/delete/",{
+    const origin=process.env.REACT_APP_API_URL;
+    const response=await fetch(`${origin}/api/user/delete/`,{
       method:"DELETE",
       headers:{
           "Content-Type":"application/json",

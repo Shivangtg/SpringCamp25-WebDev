@@ -5,6 +5,11 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
+  {
+    browser: true,
+    node: true, // This line ensures `process` is recognized as a Node global.
+    es2021: true,
+  },
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],

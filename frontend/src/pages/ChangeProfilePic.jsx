@@ -18,7 +18,9 @@ const ChangeProfilePic = () => {
 
     const changeProfilePic = async function(e){
         e.preventDefault();
-        const response=await fetch("http://localhost:6789/api/user/update/",{
+        setError("");
+        const origin=process.env.REACT_APP_API_URL;
+        const response=await fetch(`${origin}/api/user/update/`,{
             method:"PATCH",
             headers:{
                 "Content-Type":"application/json",
