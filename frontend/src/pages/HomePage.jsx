@@ -10,7 +10,7 @@ const HomePage = () => {
         <img src="/vite.svg" alt="" width="400px" id="logo"/>
         <h1>Manage your tasks easily</h1>
         {!user?(
-        <div className="bottomPart">          
+        <div style={{display: "flex",width: "100%",justifyContent: "center",columnGap: "30%",alignItems: "center"}}>          
             <Link to="/login">
                 <button>
                     Log In
