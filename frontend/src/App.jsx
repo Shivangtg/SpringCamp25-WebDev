@@ -51,7 +51,7 @@ function App() {
 
     if(localStorage.getItem("user")){
       getUser();
-      navigate("/profile")
+      navigate("/")
     }
   },[])
 
